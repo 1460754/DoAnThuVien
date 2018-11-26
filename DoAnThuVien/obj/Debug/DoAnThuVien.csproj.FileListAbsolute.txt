@@ -13,3 +13,17 @@ D:\Study\HCDH\PhanTichThietKePM\DoAn\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVi
 D:\Study\HCDH\PhanTichThietKePM\DoAn\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.csproj.CoreCompileInputs.cache
 D:\Study\HCDH\PhanTichThietKePM\DoAn\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.exe
 D:\Study\HCDH\PhanTichThietKePM\DoAn\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.pdb
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\bin\Debug\DoAnThuVien.exe.config
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\bin\Debug\DoAnThuVien.exe
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\bin\Debug\DoAnThuVien.pdb
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.csprojResolveAssemblyReference.cache
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.GUI.Doc_Gia.resources
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.GUI.Phieu_Tra_Sach.resources
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.GUI.Quan_Ly_Thong_Tin_Sach.resources
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.GUI.Sach.resources
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.GUI.Tao_Phieu_Muon_Sach.resources
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.Properties.Resources.resources
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.csproj.GenerateResource.cache
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.csproj.CoreCompileInputs.cache
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.exe
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.pdb

@@ -12,10 +12,6 @@ namespace DoAnThuVien.BUS
    public class SachBus
    {
       SachDao sachDao = new SachDao();
-      public void ThemSach(SachDto sachDto)
-      {
-         sachDao.ThemSach(sachDto);
-      }
       public DataTable LayDanhSach()
       {
          try
@@ -43,6 +39,10 @@ namespace DoAnThuVien.BUS
       public string SuaSach(SachDto sach)
       {
          string kq = "";
+        /* if(!sachDao.KiemTraMaSach(sach.ID))
+         {
+            return "Mã sách không tồn tại!";
+         }*/
          int temp = sachDao.CapNhatSach(sach);
          if (temp != -1)
          {
@@ -64,9 +64,21 @@ namespace DoAnThuVien.BUS
       public string XoaSach(int masach)
       {
          string kq = "";
-         if (sachDao.XoaSach(masach) != -1)
+         //if (!sachDao.KiemTraMaSach(masach))
+         //{
+         //   return "Mã sách không tồn tại!";
+         //}
+         int temp = sachDao.XoaSach(masach);
+         if (temp != -1)
          {
-            kq = "Đã xóa thành công!";
+            if (temp == 0)
+            {
+               kq = "Sách không tồn tại";
+            }
+            else
+            {
+               kq = "Đã xóa thành công!";
+            }  
          }
          else
          {
