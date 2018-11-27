@@ -52,7 +52,7 @@ namespace DoAnThuVien.DAO
 
       public int XoaSachThat(int MaSach)
       {
-         string sql = string.Format("Delete Sach where MaSach={0}", MaSach);
+         string sql = string.Format("Delete Sach where ID={0}", MaSach);
 
          return connect.ThucThi(sql);
       }

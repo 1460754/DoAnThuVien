@@ -45,9 +45,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\DocGiaBus.cs" />
+    <Compile Include="BUS\LoaiDocGiaBus.cs" />
     <Compile Include="BUS\SachBus.cs" />
     <Compile Include="DAO\ConnectString.cs" />
+    <Compile Include="DAO\DocGiaDao.cs" />
+    <Compile Include="DAO\LoaiDocGiaDao.cs" />
     <Compile Include="DAO\SachDao.cs" />
+    <Compile Include="DTO\DocGiaDto.cs" />
+    <Compile Include="DTO\LoaiDocGiaDto.cs" />
     <Compile Include="DTO\SachDto.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

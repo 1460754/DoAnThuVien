@@ -16,7 +16,7 @@ namespace DoAnThuVien
       {
          Application.EnableVisualStyles();
          Application.SetCompatibleTextRenderingDefault(false);
-         Application.Run(new GUI.Quan_Ly_Thong_Tin_Sach());
+         Application.Run(new GUI.Doc_Gia());
       }
    }
 }
