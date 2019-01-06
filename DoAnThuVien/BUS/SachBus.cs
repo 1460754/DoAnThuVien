@@ -23,6 +23,39 @@ namespace DoAnThuVien.BUS
             throw ex;
          }
       }
+      public DataTable TimSachTheoTen(string TenSach)
+      {
+         try
+         {
+            return sachDao.TimSachTheoTen(TenSach);
+         }
+         catch (Exception ex)
+         {
+            throw ex;
+         }
+      }
+      public DataTable TimSachTheoTheLoai(string TheLoai)
+      {
+         try
+         {
+            return sachDao.TimSachTheoTheLoai(TheLoai);
+         }
+         catch (Exception ex)
+         {
+            throw ex;
+         }
+      }
+      public DataTable TimSachTheoTacGia(string TacGia)
+      {
+         try
+         {
+            return sachDao.TimSachTheoTacGia(TacGia);
+         }
+         catch (Exception ex)
+         {
+            throw ex;
+         }
+      }
       public string ThemSach(SachDto sach)
       {
          string kq = "";

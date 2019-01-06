@@ -39,16 +39,12 @@ namespace DoAnThuVien.BUS
       public string SuaDocGia(DocGiaDto docGia)
       {
          string kq = "";
-         /* if(!sachDao.KiemTraMaSach(sach.ID))
-          {
-             return "Mã sách không tồn tại!";
-          }*/
          int temp = docGiaDao.CapNhatDocGia(docGia);
          if (temp != -1)
          {
             if (temp == 0)
             {
-               kq = "Sách không tồn tại";
+               kq = "Độc giả không tồn tại";
             }
             else
             {
@@ -73,7 +69,7 @@ namespace DoAnThuVien.BUS
          {
             if (temp == 0)
             {
-               kq = "Sách không tồn tại";
+               kq = "Độc giả không tồn tại";
             }
             else
             {

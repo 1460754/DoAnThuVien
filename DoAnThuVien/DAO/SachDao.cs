@@ -14,12 +14,24 @@ namespace DoAnThuVien.DAO
 
       public DataTable LayDanhSachSach()
       {
-         return connect.LayDuLieu("Select * from Sach where Xoa == false");
+         return connect.LayDuLieu("Select TenSach,TacGia,TheLoai,NXB, NamXB, DonGia, SoLuong, SoLuongTon from Sach where Xoa = 'false'");
       }
 
+      public DataTable TimSachTheoTen(string TenSach)
+      {
+         return connect.LayDuLieu("Select TenSach,TacGia,TheLoai,NXB, NamXB, DonGia, SoLuong, SoLuongTon from Sach where Xoa = 'false'");
+      }
+      public DataTable TimSachTheoTheLoai(string TheLoai)
+      {
+         return connect.LayDuLieu("Select TenSach,TacGia,TheLoai,NXB, NamXB, DonGia, SoLuong, SoLuongTon from Sach where Xoa = 'false'");
+      }
+      public DataTable TimSachTheoTacGia(string TacGia)
+      {
+         return connect.LayDuLieu("Select TenSach,TacGia,TheLoai,NXB, NamXB, DonGia, SoLuong, SoLuongTon from Sach where Xoa = 'false'");
+      }
       public Boolean KiemTraMaSach(int MaSach)
       {
-         string sql = "Select * from Sach where Xoa == false and ID=" + MaSach;
+         string sql = "Select * from Sach where where Xoa = 'false' and ID=" + MaSach;
          DataTable data = connect.LayDuLieu(sql);
          if(data.Rows.Count > 0)
          {

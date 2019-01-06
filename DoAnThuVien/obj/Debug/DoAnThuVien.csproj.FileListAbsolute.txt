@@ -27,3 +27,8 @@ D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\
 D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.csproj.CoreCompileInputs.cache
 D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.exe
 D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.pdb
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\bin\Debug\EntityFramework.dll
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\bin\Debug\EntityFramework.SqlServer.dll
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\bin\Debug\EntityFramework.xml
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\bin\Debug\EntityFramework.SqlServer.xml
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.csproj.CopyComplete

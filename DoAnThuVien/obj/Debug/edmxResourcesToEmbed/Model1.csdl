@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLThuVienModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CTPhieuMuon">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_PhieuMuon" Type="Int32" />
+    <Property Name="ID_Sach" Type="Int32" />
+  </EntityType>
+  <EntityType Name="CTPhieuTra">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_PhieuTra" Type="Int32" />
+    <Property Name="ID_Sach" Type="Int32" />
+    <Property Name="TinhTrangSach" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SoNgayTre" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DocGia">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoTen" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="GioiTinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgaySinh" Type="DateTime" Precision="0" />
+    <Property Name="DiaChi" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SDT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CMND" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LoaiDG" Type="Int32" />
+    <Property Name="NgayLapThe" Type="DateTime" Precision="0" />
+    <Property Name="NgayHetHan" Type="DateTime" Precision="0" />
+    <Property Name="SoSachMuon" Type="Int32" />
+    <Property Name="TinhTrangThe" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Xoa" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="LoaiDocGia">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenLoaiDocGia" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Xoa" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="LoaiSach">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenLoaiSach" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Xoa" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="PhieuMuon">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_DG" Type="Int32" />
+    <Property Name="TongSoSachMuon" Type="Int32" />
+    <Property Name="NgayMuon" Type="DateTime" Precision="0" />
+    <Property Name="TinhTrang" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PhieuTra">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_PhieuMuon" Type="Int32" />
+    <Property Name="ID_DocGIa" Type="Int32" />
+    <Property Name="SoSachTra" Type="Int32" />
+    <Property Name="NgayTra" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="Sach">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenSach" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="TacGia" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="TheLoai" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="NXB" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="NamXB" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="NgayNhap" Type="DateTime" Precision="0" />
+    <Property Name="ID_Loai" Type="Int32" />
+    <Property Name="DonGia" Type="Double" />
+    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="SoLuongTon" Type="Int32" />
+    <Property Name="Xoa" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityContainer Name="QLThuVienEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CTPhieuMuons" EntityType="Self.CTPhieuMuon" />
+    <EntitySet Name="CTPhieuTras" EntityType="Self.CTPhieuTra" />
+    <EntitySet Name="DocGias" EntityType="Self.DocGia" />
+    <EntitySet Name="LoaiDocGias" EntityType="Self.LoaiDocGia" />
+    <EntitySet Name="LoaiSaches" EntityType="Self.LoaiSach" />
+    <EntitySet Name="PhieuMuons" EntityType="Self.PhieuMuon" />
+    <EntitySet Name="PhieuTras" EntityType="Self.PhieuTra" />
+    <EntitySet Name="Saches" EntityType="Self.Sach" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+  </EntityContainer>
+</Schema>

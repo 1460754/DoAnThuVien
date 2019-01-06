@@ -12,19 +12,40 @@ using System.Windows.Forms;
 
 namespace DoAnThuVien.GUI
 {
-    public partial class Quan_Ly_Thong_Tin_Sach : Form
-    {
-       SachBus sachBUS = new SachBus();
-        public Quan_Ly_Thong_Tin_Sach()
-        {
-            InitializeComponent();
-        }
+   public partial class Quan_Ly_Thong_Tin_Sach : Form
+   {
+      SachBus sachBUS = new SachBus();
+      QLThuVienEntities tv = new QLThuVienEntities();
+      public Quan_Ly_Thong_Tin_Sach()
+      {
+         InitializeComponent();
+         cmbTheLoai.Items.Add("Tieu thuyet");
+         cmbTheLoai.Items.Add("Sach thieu nhi");
+         cmbTheLoai.Items.Add("Tam ly, tam linh, ton gia");
+         cmbTheLoai.Items.Add("Van hoc nghe thuat");
+         cmbTheLoai.Items.Add("Van hoa xa hoi - Lich su");
+         cmbTheLoai.Items.Add("Khoa hoc cong nghe - Kinh te");
+         cmbTheLoai.Items.Add("Chinh tri - phap luat");
+         cmbTheLoai.Items.Add("Giao duc");
+
+         //cmb The loai cua sach can tim
+         cmbTheLoaiTim.Items.Add("Tieu thuyet");
+         cmbTheLoaiTim.Items.Add("Sach thieu nhi");
+         cmbTheLoaiTim.Items.Add("Tam ly, tam linh, ton gia");
+         cmbTheLoaiTim.Items.Add("Van hoc nghe thuat");
+         cmbTheLoaiTim.Items.Add("Van hoa xa hoi - Lich su");
+         cmbTheLoaiTim.Items.Add("Khoa hoc cong nghe - Kinh te");
+         cmbTheLoaiTim.Items.Add("Chinh tri - phap luat");
+         cmbTheLoaiTim.Items.Add("Giao duc");
+
+         dataGridView1.DataSource = tv.Saches.Where(s => s.Xoa == false).ToList();
+      }
 
       private void button2_Click(object sender, EventArgs e)
       {
          int temp = 0;
          float gia = 0;
-         if(!int.TryParse(txbSoLuong.Text,out temp) || !float.TryParse(txtGia.Text, out gia))
+         if (!int.TryParse(txbSoLuong.Text, out temp) || !float.TryParse(txtGia.Text, out gia))
          {
             MessageBox.Show("Vui lòng điền số!");
          }
@@ -34,7 +55,7 @@ namespace DoAnThuVien.GUI
             // sachDto.ID = textBox1.Text;
             sachDto.TenSach = txbTen.Text;
             sachDto.TacGia = txbTacGia.Text;
-            sachDto.TheLoai = txbTheLoai.Text;
+            sachDto.TheLoai = cmbTheLoai.SelectedItem.ToString();
             sachDto.ID_Loai = 0;
             sachDto.NXB = txbNXB.Text;
             sachDto.NamXB = txtNamXB.Text;
@@ -45,7 +66,7 @@ namespace DoAnThuVien.GUI
             string mess = sachBUS.ThemSach(sachDto);
             MessageBox.Show(mess);
          }
-         
+
       }
 
       private void button4_Click(object sender, EventArgs e)
@@ -62,7 +83,7 @@ namespace DoAnThuVien.GUI
             sachDto.ID = int.Parse(txbMa.Text);
             sachDto.TenSach = txbTen.Text;
             sachDto.TacGia = txbTacGia.Text;
-            sachDto.TheLoai = txbTheLoai.Text;
+            sachDto.TheLoai = cmbTheLoai.SelectedItem.ToString();
             sachDto.ID_Loai = 0;
             sachDto.NXB = txbNXB.Text;
             sachDto.NamXB = txtNamXB.Text;
@@ -94,11 +115,41 @@ namespace DoAnThuVien.GUI
          txbMa.Text = "";
          txbTen.Text = "";
          txbTacGia.Text = "";
-         txbTheLoai.Text = "";
+         cmbTheLoai.SelectedItem = -1;
          txbNXB.Text = "";
          txtNamXB.Text = "";
          txbSoLuong.Text = "";
          txtGia.Text = "";
+      }
+
+      private void button1_Click(object sender, EventArgs e)
+      {
+         if (txbTenSachTim.Text != "")
+         {
+            dataGridView1.DataSource = tv.Saches.Where(s => s.TenSach.Contains(txbTenSachTim.Text) && s.Xoa == false).ToList();
+         }
+         else
+         {
+            if (cmbTheLoaiTim.SelectedIndex != -1)
+            {
+               dataGridView1.DataSource = tv.Saches.Where(s => s.TheLoai == cmbTheLoaiTim.SelectedItem.ToString() && s.Xoa == false).ToList();
+            }
+            else
+            {
+               if (txbTacGiaTim.Text != "")
+               {
+                  dataGridView1.DataSource = tv.Saches.Where(s => s.TacGia.Contains(txbTacGiaTim.Text) && s.Xoa == false).ToList();
+               }
+               else
+               {
+                  dataGridView1.DataSource = tv.Saches.Where(s => s.Xoa == false).ToList();
+               }
+            }
+         }
+         if(dataGridView1.RowCount == 0)
+         {
+            MessageBox.Show("Không có sách cần tìm!!!");
+         }
       }
    }
 }
