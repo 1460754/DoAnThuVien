@@ -16,6 +16,8 @@ namespace DoAnThuVien
     {
         public int ID { get; set; }
         public string TenLoaiDocGia { get; set; }
+        public Nullable<int> SoSachMuon { get; set; }
+        public Nullable<int> SoNgayMuon { get; set; }
         public Nullable<bool> Xoa { get; set; }
     }
 }

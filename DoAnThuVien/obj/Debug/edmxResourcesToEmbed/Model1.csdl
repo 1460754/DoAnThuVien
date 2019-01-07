@@ -42,6 +42,8 @@
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TenLoaiDocGia" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SoSachMuon" Type="Int32" />
+    <Property Name="SoNgayMuon" Type="Int32" />
     <Property Name="Xoa" Type="Boolean" />
   </EntityType>
   <EntityType Name="LoaiSach">

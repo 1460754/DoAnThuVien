@@ -66,12 +66,18 @@
     <Compile Include="DAO\ConnectString.cs" />
     <Compile Include="DAO\DocGiaDao.cs" />
     <Compile Include="DAO\LoaiDocGiaDao.cs" />
+    <Compile Include="DAO\PhieuMuonDao.cs" />
+    <Compile Include="DAO\PhieuTraDao.cs" />
     <Compile Include="DAO\SachDao.cs" />
     <Compile Include="DocGia.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="DTO\CTPhieuMuonDto.cs" />
+    <Compile Include="DTO\CTPhieuTraDto.cs" />
     <Compile Include="DTO\DocGiaDto.cs" />
     <Compile Include="DTO\LoaiDocGiaDto.cs" />
+    <Compile Include="DTO\PhieuMuonDto.cs" />
+    <Compile Include="DTO\PhieuTraDto.cs" />
     <Compile Include="DTO\SachDto.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -97,11 +103,11 @@
     <Compile Include="GUI\Quan_Ly_Thong_Tin_Sach.Designer.cs">
       <DependentUpon>Quan_Ly_Thong_Tin_Sach.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Sach.cs">
+    <Compile Include="GUI\SachGUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Sach.Designer.cs">
-      <DependentUpon>Sach.cs</DependentUpon>
+    <Compile Include="GUI\SachGUI.Designer.cs">
+      <DependentUpon>SachGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Tao_Phieu_Muon_Sach.cs">
       <SubType>Form</SubType>
@@ -153,8 +159,8 @@
     <EmbeddedResource Include="GUI\Quan_Ly_Thong_Tin_Sach.resx">
       <DependentUpon>Quan_Ly_Thong_Tin_Sach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Sach.resx">
-      <DependentUpon>Sach.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\SachGUI.resx">
+      <DependentUpon>SachGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Tao_Phieu_Muon_Sach.resx">
       <DependentUpon>Tao_Phieu_Muon_Sach.cs</DependentUpon>
@@ -187,22 +193,24 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

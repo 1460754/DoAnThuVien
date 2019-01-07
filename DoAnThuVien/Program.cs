@@ -16,7 +16,7 @@ namespace DoAnThuVien
       {
          Application.EnableVisualStyles();
          Application.SetCompatibleTextRenderingDefault(false);
-         Application.Run(new GUI.Doc_Gia());
+         Application.Run(new GUI.Tao_Phieu_Muon_Sach());
       }
    }
 }

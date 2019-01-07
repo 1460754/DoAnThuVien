@@ -20,7 +20,6 @@ D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\
 D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.GUI.Doc_Gia.resources
 D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.GUI.Phieu_Tra_Sach.resources
 D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.GUI.Quan_Ly_Thong_Tin_Sach.resources
-D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.GUI.Sach.resources
 D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.GUI.Tao_Phieu_Muon_Sach.resources
 D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.Properties.Resources.resources
 D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.csproj.GenerateResource.cache
@@ -32,3 +31,4 @@ D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\
 D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\bin\Debug\EntityFramework.xml
 D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\bin\Debug\EntityFramework.SqlServer.xml
 D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.csproj.CopyComplete
+D:\Study\HCDH\PhanTichThietKePM\DoAnThuVien\DoAnThuVien\DoAnThuVien\DoAnThuVien\obj\Debug\DoAnThuVien.GUI.SachGUI.resources

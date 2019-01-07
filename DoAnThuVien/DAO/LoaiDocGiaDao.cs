@@ -12,7 +12,12 @@ namespace DoAnThuVien.DAO
       ConnectString connect = new ConnectString();
       public DataTable LayDsLoaiDG()
       {
-         return connect.LayDuLieu("Select * from LoaiDocGia where Xoa == false");
+         return connect.LayDuLieu("Select * from LoaiDocGia where Xoa = 'false'");
+      }
+      public DataTable LayTenLoaiDG(int id)
+      {
+         string sql = "Select * from LoaiDocGia where Xoa = 'false' && ID =" + id;
+         return connect.LayDuLieu(sql);
       }
    }
 }

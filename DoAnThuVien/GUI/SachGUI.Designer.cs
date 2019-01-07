@@ -1,6 +1,6 @@
 ﻿namespace DoAnThuVien.GUI
 {
-    partial class Sach
+    partial class SachGUI
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,8 @@
         {
          this.label1 = new System.Windows.Forms.Label();
          this.groupBox1 = new System.Windows.Forms.GroupBox();
+         this.checkBox1 = new System.Windows.Forms.CheckBox();
+         this.txbTacGia = new System.Windows.Forms.TextBox();
          this.button1 = new System.Windows.Forms.Button();
          this.label4 = new System.Windows.Forms.Label();
          this.cmbTheLoai = new System.Windows.Forms.ComboBox();
@@ -37,10 +39,7 @@
          this.txbTenSach = new System.Windows.Forms.TextBox();
          this.label2 = new System.Windows.Forms.Label();
          this.groupBox2 = new System.Windows.Forms.GroupBox();
-         this.button2 = new System.Windows.Forms.Button();
          this.dataGridView1 = new System.Windows.Forms.DataGridView();
-         this.txbTacGia = new System.Windows.Forms.TextBox();
-         this.checkBox1 = new System.Windows.Forms.CheckBox();
          this.groupBox1.SuspendLayout();
          this.groupBox2.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -72,6 +71,23 @@
          this.groupBox1.TabIndex = 1;
          this.groupBox1.TabStop = false;
          this.groupBox1.Text = "Tìm Sách";
+         // 
+         // checkBox1
+         // 
+         this.checkBox1.AutoSize = true;
+         this.checkBox1.Location = new System.Drawing.Point(59, 131);
+         this.checkBox1.Name = "checkBox1";
+         this.checkBox1.Size = new System.Drawing.Size(99, 17);
+         this.checkBox1.TabIndex = 8;
+         this.checkBox1.Text = "Tìm tất cả sách";
+         this.checkBox1.UseVisualStyleBackColor = true;
+         // 
+         // txbTacGia
+         // 
+         this.txbTacGia.Location = new System.Drawing.Point(59, 105);
+         this.txbTacGia.Name = "txbTacGia";
+         this.txbTacGia.Size = new System.Drawing.Size(131, 20);
+         this.txbTacGia.TabIndex = 7;
          // 
          // button1
          // 
@@ -127,7 +143,6 @@
          // 
          // groupBox2
          // 
-         this.groupBox2.Controls.Add(this.button2);
          this.groupBox2.Controls.Add(this.dataGridView1);
          this.groupBox2.Location = new System.Drawing.Point(237, 46);
          this.groupBox2.Name = "groupBox2";
@@ -136,39 +151,13 @@
          this.groupBox2.TabStop = false;
          this.groupBox2.Text = "Sách";
          // 
-         // button2
-         // 
-         this.button2.Location = new System.Drawing.Point(295, 171);
-         this.button2.Name = "button2";
-         this.button2.Size = new System.Drawing.Size(118, 36);
-         this.button2.TabIndex = 7;
-         this.button2.Text = "Sửa Thông Tin Sách";
-         this.button2.UseVisualStyleBackColor = true;
-         // 
          // dataGridView1
          // 
          this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          this.dataGridView1.Location = new System.Drawing.Point(6, 15);
          this.dataGridView1.Name = "dataGridView1";
-         this.dataGridView1.Size = new System.Drawing.Size(680, 150);
+         this.dataGridView1.Size = new System.Drawing.Size(680, 192);
          this.dataGridView1.TabIndex = 0;
-         // 
-         // txbTacGia
-         // 
-         this.txbTacGia.Location = new System.Drawing.Point(59, 105);
-         this.txbTacGia.Name = "txbTacGia";
-         this.txbTacGia.Size = new System.Drawing.Size(131, 20);
-         this.txbTacGia.TabIndex = 7;
-         // 
-         // checkBox1
-         // 
-         this.checkBox1.AutoSize = true;
-         this.checkBox1.Location = new System.Drawing.Point(59, 131);
-         this.checkBox1.Name = "checkBox1";
-         this.checkBox1.Size = new System.Drawing.Size(99, 17);
-         this.checkBox1.TabIndex = 8;
-         this.checkBox1.Text = "Tìm tất cả sách";
-         this.checkBox1.UseVisualStyleBackColor = true;
          // 
          // Sach
          // 
@@ -201,7 +190,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
       private System.Windows.Forms.TextBox txbTacGia;
       private System.Windows.Forms.CheckBox checkBox1;
    }

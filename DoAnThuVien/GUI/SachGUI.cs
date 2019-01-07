@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace DoAnThuVien.GUI
 {
-   public partial class Sach : Form
+   public partial class SachGUI : Form
    {
       QLThuVienEntities tv = new QLThuVienEntities();
       SachBus sachBUS = new SachBus();
-      public Sach()
+      public SachGUI()
       {
          InitializeComponent();
          cmbTheLoai.Items.Add("Tieu thuyet");

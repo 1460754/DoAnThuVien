@@ -26,6 +26,8 @@ namespace DoAnThuVien.GUI
          cmbLoaiDG.ValueMember = "ID";
          cmbLoaiDG.DataSource = tv.LoaiDocGias.ToList();
 
+         dateTimePickerLap.Value = DateTime.Now;
+         dateTimePickerHet.Value = DateTime.Now.AddMonths(6);
         // dataGridView1.DataSource = tv.DocGias.Where(dg => dg.Xoa == false).ToList();
       }
 
@@ -159,6 +161,11 @@ namespace DoAnThuVien.GUI
          {
             MessageBox.Show("Không có độc giả cần tìm!!!");
          }
+      }
+
+      private void dateTimePickerLap_ValueChanged(object sender, EventArgs e)
+      {
+         dateTimePickerHet.Value = dateTimePickerLap.Value.AddMonths(6);
       }
    }
 }

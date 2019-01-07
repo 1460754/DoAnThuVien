@@ -45,6 +45,8 @@
         <MappingFragment StoreEntitySet="LoaiDocGia">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="TenLoaiDocGia" ColumnName="TenLoaiDocGia" />
+          <ScalarProperty Name="SoSachMuon" ColumnName="SoSachMuon" />
+          <ScalarProperty Name="SoNgayMuon" ColumnName="SoNgayMuon" />
           <ScalarProperty Name="Xoa" ColumnName="Xoa" />
         </MappingFragment>
       </EntityTypeMapping>
