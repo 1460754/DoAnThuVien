@@ -62,6 +62,7 @@
     <Property Name="ID_DG" Type="int" />
     <Property Name="TongSoSachMuon" Type="int" />
     <Property Name="NgayMuon" Type="date" />
+    <Property Name="NgayTra" Type="date" />
     <Property Name="TinhTrang" Type="nvarchar" MaxLength="500" />
   </EntityType>
   <EntityType Name="PhieuTra">

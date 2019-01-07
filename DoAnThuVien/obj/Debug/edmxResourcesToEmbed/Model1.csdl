@@ -62,6 +62,7 @@
     <Property Name="ID_DG" Type="Int32" />
     <Property Name="TongSoSachMuon" Type="Int32" />
     <Property Name="NgayMuon" Type="DateTime" Precision="0" />
+    <Property Name="NgayTra" Type="DateTime" Precision="0" />
     <Property Name="TinhTrang" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="PhieuTra">

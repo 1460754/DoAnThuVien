@@ -54,8 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\CTPhieuMuonBUS.cs" />
     <Compile Include="BUS\DocGiaBus.cs" />
     <Compile Include="BUS\LoaiDocGiaBus.cs" />
+    <Compile Include="BUS\PhieuMuonBus.cs" />
     <Compile Include="BUS\SachBus.cs" />
     <Compile Include="CTPhieuMuon.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -64,6 +66,7 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\ConnectString.cs" />
+    <Compile Include="DAO\CTPhieuMuonDao.cs" />
     <Compile Include="DAO\DocGiaDao.cs" />
     <Compile Include="DAO\LoaiDocGiaDao.cs" />
     <Compile Include="DAO\PhieuMuonDao.cs" />

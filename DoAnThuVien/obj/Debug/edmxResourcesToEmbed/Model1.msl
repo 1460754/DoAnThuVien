@@ -67,6 +67,7 @@
           <ScalarProperty Name="ID_DG" ColumnName="ID_DG" />
           <ScalarProperty Name="TongSoSachMuon" ColumnName="TongSoSachMuon" />
           <ScalarProperty Name="NgayMuon" ColumnName="NgayMuon" />
+          <ScalarProperty Name="NgayTra" ColumnName="NgayTra" />
           <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
         </MappingFragment>
       </EntityTypeMapping>

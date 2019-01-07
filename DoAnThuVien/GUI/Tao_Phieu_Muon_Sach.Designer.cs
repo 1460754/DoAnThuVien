@@ -58,12 +58,15 @@
          this.label13 = new System.Windows.Forms.Label();
          this.groupBox3 = new System.Windows.Forms.GroupBox();
          this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-         this.button4 = new System.Windows.Forms.Button();
+         this.btnLapPM = new System.Windows.Forms.Button();
          this.label9 = new System.Windows.Forms.Label();
-         this.txbMa = new System.Windows.Forms.TextBox();
+         this.txbMaPM = new System.Windows.Forms.TextBox();
          this.label8 = new System.Windows.Forms.Label();
          this.groupBox4 = new System.Windows.Forms.GroupBox();
          this.dataGridView1 = new System.Windows.Forms.DataGridView();
+         this.btnXoaPM = new System.Windows.Forms.Button();
+         this.button1 = new System.Windows.Forms.Button();
+         this.btnResetAll = new System.Windows.Forms.Button();
          this.groupBox1.SuspendLayout();
          this.groupBox2.SuspendLayout();
          this.groupBox3.SuspendLayout();
@@ -75,7 +78,7 @@
          // 
          this.label1.AutoSize = true;
          this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label1.Location = new System.Drawing.Point(150, 9);
+         this.label1.Location = new System.Drawing.Point(130, 19);
          this.label1.Name = "label1";
          this.label1.Size = new System.Drawing.Size(394, 37);
          this.label1.TabIndex = 0;
@@ -214,6 +217,7 @@
          // 
          // groupBox2
          // 
+         this.groupBox2.Controls.Add(this.btnResetAll);
          this.groupBox2.Controls.Add(this.button5);
          this.groupBox2.Controls.Add(this.btnReset);
          this.groupBox2.Controls.Add(this.btnXoa);
@@ -249,8 +253,9 @@
          this.btnReset.Name = "btnReset";
          this.btnReset.Size = new System.Drawing.Size(75, 23);
          this.btnReset.TabIndex = 8;
-         this.btnReset.Text = "Xóa Trắng";
+         this.btnReset.Text = "Reset";
          this.btnReset.UseVisualStyleBackColor = true;
+         this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
          // 
          // btnXoa
          // 
@@ -260,6 +265,7 @@
          this.btnXoa.TabIndex = 8;
          this.btnXoa.Text = "Xóa";
          this.btnXoa.UseVisualStyleBackColor = true;
+         this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
          // 
          // btnThemSach
          // 
@@ -340,49 +346,52 @@
          // groupBox3
          // 
          this.groupBox3.Controls.Add(this.dateTimePicker1);
-         this.groupBox3.Controls.Add(this.button4);
+         this.groupBox3.Controls.Add(this.btnXoaPM);
+         this.groupBox3.Controls.Add(this.btnLapPM);
          this.groupBox3.Controls.Add(this.label9);
-         this.groupBox3.Controls.Add(this.txbMa);
+         this.groupBox3.Controls.Add(this.txbMaPM);
          this.groupBox3.Controls.Add(this.label8);
          this.groupBox3.Location = new System.Drawing.Point(12, 373);
          this.groupBox3.Name = "groupBox3";
-         this.groupBox3.Size = new System.Drawing.Size(613, 82);
+         this.groupBox3.Size = new System.Drawing.Size(613, 83);
          this.groupBox3.TabIndex = 13;
          this.groupBox3.TabStop = false;
          this.groupBox3.Text = "Thông Tin Phiếu Mượn";
          // 
          // dateTimePicker1
          // 
+         this.dateTimePicker1.Enabled = false;
          this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-         this.dateTimePicker1.Location = new System.Drawing.Point(337, 32);
+         this.dateTimePicker1.Location = new System.Drawing.Point(312, 27);
          this.dateTimePicker1.Name = "dateTimePicker1";
          this.dateTimePicker1.Size = new System.Drawing.Size(114, 20);
          this.dateTimePicker1.TabIndex = 14;
          // 
-         // button4
+         // btnLapPM
          // 
-         this.button4.Location = new System.Drawing.Point(457, 30);
-         this.button4.Name = "button4";
-         this.button4.Size = new System.Drawing.Size(112, 23);
-         this.button4.TabIndex = 13;
-         this.button4.Text = "Lập Phiếu Mượn";
-         this.button4.UseVisualStyleBackColor = true;
+         this.btnLapPM.Location = new System.Drawing.Point(436, 28);
+         this.btnLapPM.Name = "btnLapPM";
+         this.btnLapPM.Size = new System.Drawing.Size(102, 23);
+         this.btnLapPM.TabIndex = 13;
+         this.btnLapPM.Text = "Lập Phiếu Mượn";
+         this.btnLapPM.UseVisualStyleBackColor = true;
+         this.btnLapPM.Click += new System.EventHandler(this.btnLapPM_Click);
          // 
          // label9
          // 
          this.label9.AutoSize = true;
-         this.label9.Location = new System.Drawing.Point(251, 37);
+         this.label9.Location = new System.Drawing.Point(227, 33);
          this.label9.Name = "label9";
          this.label9.Size = new System.Drawing.Size(79, 13);
          this.label9.TabIndex = 11;
          this.label9.Text = "Ngày Trả Sách";
          // 
-         // txbMa
+         // txbMaPM
          // 
-         this.txbMa.Location = new System.Drawing.Point(99, 30);
-         this.txbMa.Name = "txbMa";
-         this.txbMa.Size = new System.Drawing.Size(111, 20);
-         this.txbMa.TabIndex = 10;
+         this.txbMaPM.Location = new System.Drawing.Point(99, 30);
+         this.txbMaPM.Name = "txbMaPM";
+         this.txbMaPM.Size = new System.Drawing.Size(111, 20);
+         this.txbMaPM.TabIndex = 10;
          // 
          // label8
          // 
@@ -395,8 +404,9 @@
          // 
          // groupBox4
          // 
+         this.groupBox4.Controls.Add(this.button1);
          this.groupBox4.Controls.Add(this.dataGridView1);
-         this.groupBox4.Location = new System.Drawing.Point(12, 470);
+         this.groupBox4.Location = new System.Drawing.Point(12, 462);
          this.groupBox4.Name = "groupBox4";
          this.groupBox4.Size = new System.Drawing.Size(613, 199);
          this.groupBox4.TabIndex = 14;
@@ -406,10 +416,40 @@
          // dataGridView1
          // 
          this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         this.dataGridView1.Location = new System.Drawing.Point(9, 19);
+         this.dataGridView1.Location = new System.Drawing.Point(9, 50);
          this.dataGridView1.Name = "dataGridView1";
-         this.dataGridView1.Size = new System.Drawing.Size(598, 172);
+         this.dataGridView1.Size = new System.Drawing.Size(598, 141);
          this.dataGridView1.TabIndex = 0;
+         // 
+         // btnXoaPM
+         // 
+         this.btnXoaPM.Location = new System.Drawing.Point(544, 28);
+         this.btnXoaPM.Name = "btnXoaPM";
+         this.btnXoaPM.Size = new System.Drawing.Size(62, 23);
+         this.btnXoaPM.TabIndex = 9;
+         this.btnXoaPM.Text = "Xóa";
+         this.btnXoaPM.UseVisualStyleBackColor = true;
+         this.btnXoaPM.Click += new System.EventHandler(this.btnXoaPM_Click);
+         // 
+         // button1
+         // 
+         this.button1.Location = new System.Drawing.Point(482, 19);
+         this.button1.Name = "button1";
+         this.button1.Size = new System.Drawing.Size(116, 23);
+         this.button1.TabIndex = 10;
+         this.button1.Text = "DS Sách Mượn";
+         this.button1.UseVisualStyleBackColor = true;
+         this.button1.Click += new System.EventHandler(this.button1_Click);
+         // 
+         // btnResetAll
+         // 
+         this.btnResetAll.Location = new System.Drawing.Point(96, 224);
+         this.btnResetAll.Name = "btnResetAll";
+         this.btnResetAll.Size = new System.Drawing.Size(156, 23);
+         this.btnResetAll.TabIndex = 15;
+         this.btnResetAll.Text = "Reset All";
+         this.btnResetAll.UseVisualStyleBackColor = true;
+         this.btnResetAll.Click += new System.EventHandler(this.btnResetAll_Click);
          // 
          // Tao_Phieu_Muon_Sach
          // 
@@ -465,14 +505,17 @@
         private System.Windows.Forms.TextBox txbMaSach;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox txbMa;
+        private System.Windows.Forms.TextBox txbMaPM;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnLapPM;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView1;
       private System.Windows.Forms.Button button5;
       private System.Windows.Forms.Button btnKiemTra;
       private System.Windows.Forms.DateTimePicker dateTimePicker1;
+      private System.Windows.Forms.Button btnXoaPM;
+      private System.Windows.Forms.Button button1;
+      private System.Windows.Forms.Button btnResetAll;
    }
 }

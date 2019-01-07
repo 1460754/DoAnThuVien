@@ -67,6 +67,7 @@
           <Property Name="ID_DG" Type="int" />
           <Property Name="TongSoSachMuon" Type="int" />
           <Property Name="NgayMuon" Type="date" />
+          <Property Name="NgayTra" Type="date" />
           <Property Name="TinhTrang" Type="nvarchar" MaxLength="500" />
         </EntityType>
         <EntityType Name="PhieuTra">
@@ -184,6 +185,7 @@
           <Property Name="ID_DG" Type="Int32" />
           <Property Name="TongSoSachMuon" Type="Int32" />
           <Property Name="NgayMuon" Type="DateTime" Precision="0" />
+          <Property Name="NgayTra" Type="DateTime" Precision="0" />
           <Property Name="TinhTrang" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="PhieuTra">
@@ -306,6 +308,7 @@
                 <ScalarProperty Name="ID_DG" ColumnName="ID_DG" />
                 <ScalarProperty Name="TongSoSachMuon" ColumnName="TongSoSachMuon" />
                 <ScalarProperty Name="NgayMuon" ColumnName="NgayMuon" />
+                <ScalarProperty Name="NgayTra" ColumnName="NgayTra" />
                 <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
               </MappingFragment>
             </EntityTypeMapping>

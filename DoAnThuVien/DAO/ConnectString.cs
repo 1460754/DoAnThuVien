@@ -42,5 +42,18 @@ namespace DoAnThuVien.DAO
 
          return kq;
       }
+
+      public int ThemID(string sql)
+      {
+         SqlConnection ket_noi = new SqlConnection(duong_dan);
+         SqlCommand lenh = new SqlCommand(sql, ket_noi);
+         ket_noi.Open();
+
+         int kq = int.Parse(lenh.ExecuteScalar().ToString());
+
+         ket_noi.Close();
+
+         return kq;
+      }
    }
 }

@@ -18,6 +18,7 @@ namespace DoAnThuVien
         public Nullable<int> ID_DG { get; set; }
         public Nullable<int> TongSoSachMuon { get; set; }
         public Nullable<System.DateTime> NgayMuon { get; set; }
+        public Nullable<System.DateTime> NgayTra { get; set; }
         public string TinhTrang { get; set; }
     }
 }

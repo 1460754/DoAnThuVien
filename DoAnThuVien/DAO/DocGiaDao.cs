@@ -13,7 +13,7 @@ namespace DoAnThuVien.DAO
       ConnectString connect = new ConnectString();
       public DataTable LayDsDocGia()
       {
-         return connect.LayDuLieu("Select * from DocGia where where Xoa = 'false'");
+         return connect.LayDuLieu("Select * from DocGia where Xoa = 'false'");
       }
       public Boolean KiemTraDocGia(int MaDG)
       {
